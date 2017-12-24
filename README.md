@@ -37,7 +37,7 @@ Fill your OVH configuration <ConfigFile> using the template `ovh.conf.tpl` provi
 
 ## Run your container:
 ```
-docker run --env DOMAIN=<Domain> -v <CertificateFolder>:/dehydrated/certs :-v <ConfigFile>:/root/.ovh.cfg lerignoux/letsencryptovh
+docker run --env DOMAIN=<Domain> -v <CertificateFolder>:/dehydrated/certs :-v <ConfigFile>:/root/.ovh.conf lerignoux/letsencryptovh
 ```
 
 This will create your certificates in `<CertificateFolder>`
