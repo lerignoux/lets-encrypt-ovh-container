@@ -11,7 +11,7 @@ curl -XPOST -H"X-Ovh-Application: <ApplicationKey>" -H "Content-type: applicatio
 ```
 you get your ConumerKey and the validation Url in response.
 ```
-docker run lerignoux/letsencryptovh
+docker run lerignoux/lets-encrypt-ovh-container
 ```
 
 
@@ -37,7 +37,7 @@ Fill your OVH configuration <ConfigFile> using the template `ovh.conf.tpl` provi
 
 ## Run your container:
 ```
-docker run --env DOMAIN=<Domain> -v <CertificateFolder>:/dehydrated/certs :-v <ConfigFile>:/root/.ovh.conf lerignoux/letsencryptovh
+docker run --env DOMAIN=<Domain> -v <CertificateFolder>:/dehydrated/certs :-v <ConfigFile>:/root/.ovh.conf lerignoux/lets-encrypt-ovh-container
 ```
 
 This will create your certificates in `<CertificateFolder>`
