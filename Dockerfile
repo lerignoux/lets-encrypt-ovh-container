@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update && apk add openssh git python-dev py-pip bash openssl curl
+RUN apk update && apk add openssh git python3-dev py-pip bash openssl curl
 
 RUN git clone https://github.com/dehydrated-io/dehydrated.git
 RUN mkdir ./dehydrated/hooks
