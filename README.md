@@ -1,5 +1,9 @@
 # Lets Encrypt OVH docker container
 
+## DEPRECATED
+We recommend to use the official certbot that now supports OVH. see [ovh-plugin](https://certbot-dns-ovh.readthedocs.io/en/stable/)
+
+
 A Container to automate Lets encrypt certificate creation, renewal and revoke using ACME challenge on OVH API
 
 
